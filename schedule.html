@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Subjects - Checkmate Tutoring</title>
+    <meta charset="utf-8">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="icon" href="logo-icon.png">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <a href="index.html"><img src="Checkmate_Logo_Final-01.png" alt="Checkmate Tutoring Logo" width="200"
+                height="40" id="logo"></a>
+
+        <ul>
+            <li class="schdl-btn"><a href="schedule.html">Schedule a Session</a></li>
+            <li><a href="#">Tutoring ▾</a>
+                <ul class="dropDown">
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="subjects.html">Subjects</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="grade-levels.html">Grade Levels</a></li>
+                </ul>
+            </li>
+            <li><a href="about-faqs.html">FAQs</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About ▾</a>
+                <ul class="dropDown">
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="credentials.html">Credentials</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                </ul>
+            </li>
+        </ul>
+    </header>
+
+    <!-- Form -->
+    <div class="schedule-form">
+        <h2>Schedule a Session Form</h2>
+        <p>To schedule a session, please fill out the information below.</p>
+        <form action="submit-thanks.html">
+            <div class="form-two-col">
+                <h2>Contact Information</h2>
+                <h3 style="margin-top: 10px;">Student's Name</h3>
+
+                <div class="form-col1">
+                    <input type="text" id="fname" name="fname"><br>
+                    <label for="fname">First Name</label><br>
+                </div>
+
+                <div class="form-col2">
+                    <input type="text" id="lname" name="lname"><br>
+                    <label for="lname">Last Name</label><br>
+                </div>
+
+            </div>
+
+            <div class="form-two-col">
+                <h3>Parent's Name (if applicable)</h3>
+
+                <div class="form-col1">
+                    <input type="text" id="pfname" name="pfname"><br>
+                    <label for="pfname">First Name</label><br>
+                </div>
+
+                <div class="form-col2">
+                    <input type="text" id="plname" name="plname"><br>
+                    <label for="plname">Last Name</label><br>
+                </div>
+
+            </div>
+
+            <div class="form-two-col">
+                <h3>Student or Parent Email & Phone</h3>
+
+                <div class="form-col1">
+                    <input type="text" id="email" name="email"><br>
+                    <label for="email"><em>example@example.com</em></label><br>
+                </div>
+
+                <div class="form-col2">
+                    <input type="text" id="phone" name="phone"><br>
+                    <label for="phone"><em>(000) 000 - 0000</em></label><br>
+                </div>
+                
+            </div>
+
+            <h3>Additional Information</h3>
+
+            <div class="tutorType">
+                <label for="tutorType" style="font-size: 16pt;">Type of Tutoring</label>
+                <select name="tutorType" id="tutorType">
+                    <option value="group">Group Session (up to 10 students)</option>
+                    <option value="solo">One-On-One Session</option>
+                </select>
+            </div>
+            <br>
+
+            <div class="tutorSubject">
+                <label for="tutorSubject" style="font-size: 16pt;">Subject for Tutoring</label>
+                <select name="tutorSubject" id="tutorSubject">
+                    <option value="math">Math</option>
+                    <option value="english">English</option>
+                    <option value="science">Science</option>
+                    <option value="social-studies">Social Studies</option>
+                    <option value="arts">Arts</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <br>
+
+            <div class="tutorGrade">
+                <label for="tutorGrade" style="font-size: 16pt;">Grade</label>
+                <select name="tutorGrade" id="tutorGrade">
+                    <option value="prek-1">Pre-K - 1st Grade</option>
+                    <option value="2-5">2nd - 5th Grade</option>
+                    <option value="6-8">6th - 8th Grade</option>
+                    <option value="9-10">9th - 10th Grade</option>
+                    <option value="11-12">11th - 12th Grade</option>
+                    <option value="Higher Education">Higher Education</option>
+                </select>
+            </div>
+            <br>
+
+            <h2 style="padding-top: 30px;">Date Information</h2><br>
+
+            <div class="sessionDate">
+                <label for="date">Session Date</label>
+                <input style="margin-left: 102px; font-size: 16pt; font-family: Asap;" type="date" id="date" name="date"
+                    value="2023-11-29" min="2023-11-29" max="2024-05-31"><br>
+            </div>
+
+            <div class="sessionTime">
+                <label for="time">Session Start Time</label>
+                <input style="margin-left: 50px; font-size: 16pt; font-family: Asap;" type="time" id="time" name="time"
+                    min="06:00" max="20:00" required>
+            </div>
+
+            <div class="sessionLength">
+                <label for="sessionLength" style="font-size: 16pt;">Session Length</label>
+                <select style="margin-left: 82px; font-size: 16pt; font-family: Asap;" name="sessionLength"
+                    id="sessionLength">
+                    <option value="prek-1">Less than 15 minutes</option>
+                    <option value="2-5">15 - 30 minutes</option>
+                    <option value="6-8">30 minutes - 60 minutes</option>
+                    <option value="9-10">1 - 2 hours</option>
+                    <option value="11-12">2 - 3 hours</option>
+                </select>
+            </div>
+
+
+            <h2 style="padding-top: 30px;">Tutor Information</h2><br>
+            <h3 style="margin-top: 0px;">Do you request a specific tutor?</h3>
+            <input type="radio" id="contact1" name="contact">
+            <label for="contact1"> No </label><br>
+            <input type="radio" id="contact2" name="contact">
+            <label for="contact2"> Yes (please provide name below) </label><br>
+            <input type="text" id="name" name="name"><br>
+
+            <h3 style="margin-top: 30px;">Is there anything else we should know?</h3>
+            <textarea style="margin-bottom: 15px;" rows="5" cols="70" name="testimonialDes"></textarea><br>
+
+            <br>
+
+            <p>Please make sure your responses are accurate before submitting.</p>
+            <input type="checkbox" id="response" name="response">
+            <label for="response">Send me an email summary of my responses</label><br>
+
+            <input type="submit">
+
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <hr>
+    <div class="footer-bkg">
+        <div class="footer">
+            <div class="ft-col">
+                <h2>Tutoring</h2>
+                <ul>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="subjects.html">Subjects</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="grade-levels.html">Grade Levels</a></li>
+                </ul>
+            </div>
+
+            <div class="ft-col">
+                <h2>Links</h2>
+                <ul>
+                    <li><a href="schedule.html">Schedule a Session</a></li>
+                    <li><a href="about-faqs.html">Frequently Asked<br>Questions (FAQs)</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="ft-col">
+                <h2>Resources</h2>
+                <ul>
+                    <li><a href="https://www.youtube.com/" target="_blank">YouTube</a></li>
+                    <li><a href="https://www.khanacademy.org/" target="_blank">Khan Academy</a></li>
+                    <li><a href="https://www.k5learning.com/" target="_blank">K5 Learning</a></li>
+                    <li><a href="https://www.ixl.com/" target="_blank">IXL</a></li>
+                </ul>
+            </div>
+
+            <div class="ft-col">
+                <h2>About</h2>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="credentials.html">Credentials</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="copyright">
+        <hr>
+        <p style="float:left; padding-left: 70px;">© 2023 Checkmate Tutoring</p>
+        <p style="float:right; padding-right: 70px;">Website Created by Kayla Marcus (2023)</p>
+    </div>
+</body>
+
+</html>
